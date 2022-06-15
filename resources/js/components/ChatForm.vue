@@ -1,4 +1,5 @@
-//resources/js/components/ChatForm.vue
+// resources/assets/js/components/ChatForm.vue
+
 <template>
   <div class="input-group">
     <input
@@ -10,6 +11,7 @@
       v-model="newMessage"
       @keyup.enter="sendMessage"
     />
+
     <span class="input-group-btn">
       <button class="btn btn-primary btn-sm" id="btn-chat" @click="sendMessage">
         Send
@@ -17,6 +19,7 @@
     </span>
   </div>
 </template>
+
 <script>
 export default {
   props: ["user"],

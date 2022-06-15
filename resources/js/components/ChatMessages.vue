@@ -1,6 +1,7 @@
-// resources/js/components/ChatMessages.vue
+// resources/assets/js/components/ChatMessages.vue
+
 <template>
-  <ul class="chat">
+  <ul>
     <li class="left clearfix" v-for="message in messages" :key="message.id">
       <div class="clearfix">
         <div class="header">
@@ -15,6 +16,7 @@
     </li>
   </ul>
 </template>
+
 <script>
 export default {
   props: ["messages"],
